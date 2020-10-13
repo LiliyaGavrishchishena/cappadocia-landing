@@ -1,0 +1,70 @@
+.header {
+  background-image: url("../../images/header-bg.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 72px;
+    font-style: 24px;
+    line-height: 28px;
+  }
+
+  &__phone {
+    padding-left: 40px;
+    position: relative;
+    @extend %link;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../../images/svg/phone-icon.svg");
+      width: 30px;
+      height: 30px;
+      left: 0;
+    }
+  }
+
+  &__title {
+    padding-top: 152px;
+    text-align: center;
+    font-size: 250px;
+    line-height: 334px;
+    font-family: $font-cappadocia;
+    font-weight: 300;
+
+    & span {
+      display: block;
+      text-align: right;
+      margin-top: -66px;
+      margin-right: 85px;
+      font-size: 56px;
+      line-height: 66px;
+      font-family: $font-italic;
+    }
+  }
+}
+
+.menu__list {
+  @extend %list;
+
+  &-item {
+    display: inline-block;
+    font-family: $menu-font-family;
+  }
+
+  &-item + &-item {
+    margin-left: 52px;
+  }
+
+  &-link {
+    @extend %link;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

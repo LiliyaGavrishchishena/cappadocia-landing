@@ -1,0 +1,45 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  color: $main-font-color;
+  font-family: $main-font-family;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.page-section {
+  margin: 200px 0;
+}
+
+.title {
+  font-family: $font-cappadocia;
+  font-size: 96px;
+  line-height: 128px;
+  color: $accent-color;
+  font-weight: 300;
+  margin-bottom: 100px;
+
+  & span {
+    font-family: $font-italic;
+    font-size: 24px;
+    line-height: 28px;
+    color: $main-font-color;
+    display: block;
+    margin-top: -30px;
+    margin-left: 185px;
+  }
+}
